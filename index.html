@@ -103,7 +103,7 @@
           throw new Error("Valor não é um número");
         }
 
-        document.getElementById('valorArrecadado').innerText = `Total arrecadado: R$ ${valor.toFixed(2).replace('.', ',')}`;
+        document.getElementById('valorArrecadado').innerText = `Total arrecadado: \nR$ ${valor.toFixed(2).replace('.', ',')}`;
       } catch (erro) {
         document.getElementById('valorArrecadado').innerText = 'Erro ao carregar valor.';
         console.error(erro);
